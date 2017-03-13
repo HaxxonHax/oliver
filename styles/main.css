@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* ADHS Screen CSS with Media Queries for responsive pages */
+
+/* reset CSS to nullify differences in default margins and padding settings in all browsers */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, input, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font:inherit;
+	vertical-align: baseline;
+}
+
+table { /* tables still need cellspacing="0" in the markup */
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end CSS reset */
+
+/* HTML5 display for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+overflow-y: scroll; /*puts verrtical scrollbar on every page for those browsers that only show the scrollbar when the page's content is long 
+enough to need it, this eliminates jumps in horizonatl centering for those browsers when visitors travel between pages of different lengths  */
+overflow-x: auto;
+}
+
+body {
+	font-size:62.5%;/* makes the site's base font 10px, and makes each EM unit equal to 10px, thus making it easier to manage relative dimensions in a  responsive layout  */
+	/* NOTE: Site's current base font size is 13px, so content area font needs to be set at 1.3em to maintain that size */
+	font-family: "Arial", sans-serif; /* suffix on custom font name is for Explorer only */
+	font-style: normal; /* source of the "n" in the font suffix above */
+    font-weight: 100; /* source of the "100" in the font suffix above */
+	font-style:normal;
+	color: #000000; /*black - default font color */
+	position:relative;
+	overflow:hidden;
+	-webkit-text-size-adjust: none; /* prevents text in nested divs from being disproportionately enlarged when the page is viewed with iPhone */
+	max-width:100%;
+	width:100%;
+ }
+
+/*NOTE: Use relative EM measurement units for elements that are resized in reponse to different screen sizes. Continue to use absolute pixel measurement units only for those elements that must have fixed sizes.*/
+
+/* The "extendedfull" class allows use to disply repeating background images which extend horizontally outside the site's wrapper in multiple locations. (Attaching a repeating background image to the body tag can only be done once.) */  
+
+.extendfull {
+	position: relative;
+	display: inline;
+	float: left;
+	width: 100%;
+	padding-left: 3000px !important;
+	margin-left: -3000px !important;
+	padding-right: 3000px !important;
+	margin-right: -3000px !important;
+}
+
+#wrapper {
+	max-width:960px;/* for desktops and tablets */
+	min-width:768px;
+	margin-left:auto;
+	margin-right:auto; /* margin left-right auto centers the container */
+	width:100%;
+	height:100%;
+	min-height:100%;
+	position:relative;
+}
+
+/* begin common content styles - NOTE: These must be listed FIRST so they can be easily overridden with specific styles later!
+Any custom styles for these tags must include IDs or classes to override each property listed here. */
+
+h1 {
+	margin-top:1.0em;
+	font-size:125%; 
+	font-weight:bold;
+	color: #4d5495;
+	clear:both; /* ensures that it clears everything above it */
+	}
+
+h2 {
+	font-size:110%;
+	color: #af493e;
+	margin-bottom:1.5em; /* creates spacing between headlines and main content */
+}
+
+h3 {
+	clear:left; /* ensures that the H3 header clears prior features */
+	font-size:105%;
+	color: #4d5495;
+	font-weight: bold;
+	margin-top:1.5em;
+	}
+
+h4 {
+margin-top:1.3em; 
+font-size:105%;
+color: #4d5495;
+font-weight: bold;
+}
+
+h5 { 
+margin-top:1.3em;
+font-size:100%;
+font-weight: bold;
+font-size:1.3em;
+}
+
+#contentContainer a,#alert a {
+	color: #af493e;
+	text-decoration:none;
+}
+
+#contentContainer a:hover,#alert a:hover {
+	color: #666;
+	text-decoration:underline;
+}
+
+#contentContainer { 
+	width:100%;
+	height:100%;
+	padding-top: 140px;
+	padding-bottom: 20px;
+	background-color:white;
+	font-size:1.3em;
+	/* NOTE: Site's current base font size is 13px, so content area font needs to be set at 1.3em to maintain that size */
+}
+
+.mainContent{width:100%; margin:0 auto;}
+.innerContent{border:2px dashed #ccc; padding:20px;}
+.login{width:45%; border:2px solid #000; margin:0 auto; padding:5px; margin-top:20px; margin-bottom:20px; background:#f7f7f7;}
+form{width:100%; padding-top:3px;}
+.label{width:18%; float:left; padding:8px;}
+.field{width:70%; border:1px solid #ccc; margin:5px; padding:2px;}
+#button{margin-left:44px; margin-top:15px; margin-bottom:10px;}
+#button:hover{cursor: pointer; background:#ccc;}

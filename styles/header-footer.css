@@ -1,0 +1,315 @@
+header { 
+	margin:0;
+	padding:0;
+}
+
+#tools {/* this div is obsolete in the new banner, as is span.toolsrow */
+	display:none;
+	width:0;
+	height:0;
+	padding:0;
+	margin:0;
+}
+
+#extension1 { /* extended background color for banner */
+	margin:0;
+	padding:0;
+	clear:both;
+	width:100%;
+	height:80px; /* purple bar background image is 80px height - height needs to be fixed so that logo image isn't resized because it wouldn't	look good if it was smaller */
+	background: #8b8bad; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhiOGJhZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzY3NjU5NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzUxNTE3NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2NzY1OTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #8b8bad 0%, #676594 50%, #515175 51%, #676594 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8b8bad), color-stop(50%,#676594), color-stop(51%,#515175), color-stop(100%,#676594)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #8b8bad 0%,#676594 50%,#515175 51%,#676594 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #8b8bad 0%,#676594 50%,#515175 51%,#676594 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #8b8bad 0%,#676594 50%,#515175 51%,#676594 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #8b8bad 0%,#676594 50%,#515175 51%,#676594 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b8bad', endColorstr='#676594',GradientType=0 ); /* IE6-8 */
+}
+
+#banner {
+	margin:0;
+	padding:0;
+	clear:both;
+	width:100%;
+	height:80px; /* purple bar background image is 80px height - height needs to be fixed so that logo image isn't resized because it wouldn't	look good if it was smaller */
+	background: #8b8bad; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhiOGJhZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzY3NjU5NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzUxNTE3NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2NzY1OTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #8b8bad 0%, #676594 50%, #515175 51%, #676594 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8b8bad), color-stop(50%,#676594), color-stop(51%,#515175), color-stop(100%,#676594)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #8b8bad 0%,#676594 50%,#515175 51%,#676594 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #8b8bad 0%,#676594 50%,#515175 51%,#676594 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #8b8bad 0%,#676594 50%,#515175 51%,#676594 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #8b8bad 0%,#676594 50%,#515175 51%,#676594 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b8bad', endColorstr='#676594',GradientType=0 ); /* IE6-8 */
+	position:relative; /* sets reference point for positioning banner text */
+}
+
+/* the skip link CSS is completely different in new banner */
+
+#skip {
+	margin:0;
+	padding:0;
+}
+
+#skip ul {
+	display:inline;
+	margin:0;
+	padding:0;
+}
+
+li.skiplink {
+	display:inline;
+	margin:0;
+	padding:0;
+}
+
+#skip a,#skip a:hover,#skip a:visited {
+position: absolute;
+margin-left: -3000px; /* links positioned off the page so they aren't visible to browsers */
+width: 1px;
+height: 1px;
+overflow: hidden;
+margin:0;
+padding:0;
+}
+
+#skip a:focus, #skip a:active {
+margin-left: 0px;
+width: auto;
+height: auto;
+}
+
+#banner h1.banner {
+	position:absolute;
+	margin-left:100px; /* for a logo image floated left that is 92px wide */
+	padding:0; 
+	font-size: 1.85em; 
+	color:white;
+	font-family: 'proxima-nova', 'proxima-nova-n100', sans-serif; /* suffix on custom font name is for Explorer only */
+	font-style: normal; /* source of the "n" in the font suffix above */
+    font-weight: 100; /* source of the "100" in the font suffix above */
+	text-shadow:1px 1px #515175; /* this CSS3 feature doesn't work with IE yet */
+}
+
+#banner h1.acronym { /* only shows on cell phone portrait view */
+	display:none;
+}
+
+#banner p.motto {
+	color:#fff;
+	font-family: 'proxima-nova', 'proxima-nova-n100', sans-serif; /* suffix on custom font name is for Explorer only */
+	font-style: normal; /* source of the "n" in the font suffix above */
+    font-weight: 100; /* source of the "100" in the font suffix above */
+	font-size: 1.08em; /* main content font size is 13px */
+	position:absolute;
+	top:45px;
+	margin-left:100px; /* for a logo image floated left that is 92px wide  */
+	padding:0; 
+}
+
+/* NOTE: Padding for two logo images, and the height of the banner fixed, so that the images don't resize and become illegible in mobile phone portrait view. */
+
+img.logo {
+	float:left;
+	padding-top:10px; /* image is 92px W by 68px H (height includes drop shadow beneath image) */
+}
+
+img.azgov {
+	float:right;
+	padding-top:25px; /* image is 75px W by 45px H */
+}
+
+#extension2 { /* extended background color for navigation row */
+	height:48px;
+	width: 100%; /*For L R extension*/
+	background: #333;/*For L R extension*/
+	margin:0;
+	padding:0;
+	clear:both;
+}
+
+#searchContainer {
+	margin: 0 auto 0 auto; /* this centers it in the middle of the #extension2 div  */
+	padding:0;
+	width: 960px;
+	height:48px;
+	background:#333;
+}
+
+#search {
+	width: 960px;
+	height:48px;
+	margin:0; 
+	padding:0;
+}
+
+/* NOTE: Search box code must use absolute measurements in pixels */ 
+
+#searchbox {
+	float:right;	
+	height:40px;
+	width:304px; /* input.searchrequest 225px + input.searchbutton 26pxW + Google input borders (3X2) 6 = 257px */
+	padding:5px 0 0 0;
+	margin:0;
+}
+	
+form.universal-search {
+	padding:7px 0 0 0;
+	margin:0;
+}
+
+form.universal-search input.search-box {
+	float:left;
+	background:white;
+	font-size:13px; /* Site's current base font size is 13px */  
+	width:273px;
+	height:23px;
+	padding:0 0 0 5px;
+	margin:0;
+	border:none; 
+}
+
+form.universal-search input.search-button  {
+	float:right;
+	width:26px; /* search-22H.png is 26W X 22H */
+	height:23px;
+	border:none; 
+}
+
+/* top navigation row */
+
+#search ul {
+	list-style:none;
+	float:left;
+	line-height:40px;
+	color: #CCC;
+	font-family: 'proxima-nova', 'proxima-nova-n100', sans-serif; /* suffix on custom font name is for Explorer only */
+	font-style: normal; /* source of the "n" in the font suffix above */
+    font-weight: 100; /* source of the "100" in the font suffix above */
+	padding:5px 0 0 0;
+	margin:0;
+}
+
+#search li {
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#search a,#search a:hover,#search a:visited, #search a:active{
+	line-height:35px;
+	font-size:16px;	
+	color: #CCC;
+	text-decoration: none;
+	padding:0 36px 0 0;
+	margin:0;
+	background-color: transparent !important;
+}
+
+#search a:hover {
+	color:#FFF;
+}
+
+body.home #search li.home a,
+html.about #search li.about a,
+html.news #search li.news a,
+html.a-z #search li.a-z a,
+html.contact #search li.contact a
+ {
+	 /* active link */
+	color: #FFF;
+}
+
+/* end top navigation row */
+
+footer {
+display:block;
+clear: both;
+background: none;
+height: 104px;
+width: 100%;
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 0.77em;
+color: #333;
+}
+
+#footer-wrapper {
+display:block;
+width: 100%;
+margin: 0 0 5px 0;
+padding: 0;
+background: #333;
+}
+
+#footer-content {
+display:block;
+width: 960px;
+height: 104px;
+margin: 0 auto;
+padding: 0;
+color: #989898;
+overflow: hidden;
+}
+
+#socialicons {
+display:block;
+float: right;
+width: 111px;
+height: 104px;
+padding: 10px;
+margin: 0;
+}
+
+#socialicons ul {
+width: 100%;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+#socialicons ul li {
+float: left;
+display: inline;
+width: 32px;
+text-align: center;
+padding: 0px 5px 10px 0px;
+margin: 0;
+}
+
+#socialicons ul li a:hover {
+	filter: alpha(opacity=50);
+	opacity: 0.5;	
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+footer p {
+margin: 0;
+padding: 10px 10px 0px 10px;
+}
+p.copyright {
+	padding-bottom:5px;
+}
+
+#facebook {
+display:block;
+margin: 0;
+padding: 5px 10px 0px 10px;
+height: 30px;
+float: left;
+text-align: center;
+}
+
+span.fauxgraph {
+margin-left: 40%;
+margin-top: 0;
+padding: 5px 0 5px 5px;
+}

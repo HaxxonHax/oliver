@@ -1,0 +1,14 @@
+TODO
+----
+
+DONE - Per-user settings...somehow.
+* Improve style flexibility.
+
+X Allow custom menu links
+    No need.  We're going standard.
+
+X Allow custom header and footer
+    No need.  We're going standard.  Added standard templates (header-inc, footer-inc)
+
+* A help page ?
+* Column sort ?
